@@ -11,13 +11,17 @@
 
 // Виконання записувати у функцію applyStyles()
 
-
-
-
-
-
 function applyStyles() {
-
+    const newMain = document.createElement("main");
+    const newDiv = document.createElement("div");
+    const newPar = document.createElement("p");
+    newMain.className = "mainClass check item";
+    newDiv.id = "myDiv";
+    newPar.innerHTML = "First paragraph";
+    const plcInsert = document.querySelector(".create_elements")
+    newDiv.append(newPar);
+    newMain.append(newDiv);
+    plcInsert.append(newMain);
 }
 
 
