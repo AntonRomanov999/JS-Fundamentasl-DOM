@@ -5,6 +5,12 @@
 
 // Ваш код ..
 
+const form = document.querySelector(".array").getElementsByTagName("fieldset")[0].children;
+
+const name = form[1].value;
+const phoneNumber = form[2].value;
+const dataOfBirth = form[3].value;
+const emailAddress = form[4].value;
 
 module.exports = {
     name,
