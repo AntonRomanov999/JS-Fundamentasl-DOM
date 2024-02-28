@@ -6,7 +6,13 @@
 // четвертний елемент - змінна fourthEl
 // третій елемент - змінна thirdEl
 
-
+const list = document.getElementById("list");
+const listItems = list.getElementsByTagName("li");
+const firstEl = list.firstElementChild.innerHTML;
+const lastEl = list.lastElementChild.innerHTML;
+const secondtEl = listItems[1].innerHTML;
+const fourthEl = listItems[3].innerHTML;
+const thirdtEl = listItems[2].innerHTML;
 
 module.exports = {
   firstEl,
